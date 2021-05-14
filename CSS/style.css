@@ -1,0 +1,165 @@
+body{
+	margin: 0;
+}
+
+.info{
+	position: absolute;
+	width: 98%;
+	height: 98%;
+	background: #F2F3F4;
+	padding: 1%;
+}
+.info .border{
+	width: 70%;
+	padding: 5px 30px 5px 30px;
+}
+
+.info h1{
+	text-align: center;
+}
+
+.info h2{
+	text-align: left;
+}
+
+.info p, li{
+	text-align: left;
+	font-size:20px;
+}
+
+.info #closeInfo{
+	background: red;
+	padding: 20px;
+	display: inline-block;
+	cursor: grab;
+}
+
+
+
+.todo{
+		display: none;
+	
+}
+
+.todo h1{
+	margin-left: 20px;
+}
+
+
+.content{
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	background: white;
+	box-shadow: 0 14px 28px #E2E2E2, 0 10px 10px #E2E2E2;
+}
+
+.content .title{
+	text-align: center;
+	border-bottom: 1px solid grey;
+}
+
+.content .task{
+	padding: 20px 10px 20px 10px;
+	cursor: default;
+	border-top:1px solid white;
+}
+
+.content .normal:hover{
+	background: lightgrey;
+}
+
+.content .edit:hover{
+	background: #9eff9e;
+}
+
+.content .remove:hover{
+	background: #ff8b8b;
+}
+
+.content .img{
+	width: 25px;
+	height: 25px;
+	content: '';
+	float: right;
+	transform: translate(0%, -25%);
+	border-radius: 50%;
+}
+
+.content .successful{
+	border-bottom: 1px solid grey;
+}
+
+.content .successful .task .img{
+	background: white;
+	border: 5px solid lime;
+	text-align: center;
+}
+
+.content .successful .task .img span{
+	position: absolute;
+	transform: translate(-50%, 10%);
+	font-weight:bold;
+	color:green;
+}
+
+.content .successful .task a{
+	color:grey;
+}
+
+
+.content .tasks .task .img{
+	background: white;
+	border: 5px solid lightgrey;
+}
+
+.content .tasks .task .img span{
+	display: none;
+}
+
+
+.content .button{
+	text-align: center;
+	display: inline-block;
+	font-size:30px;
+	font-weight: bold;
+	margin-left: 45%;
+	padding: 2% 3% 2% 3%;
+	margin-top:20px;
+	margin-bottom: 10px;
+	transition: .5s;
+	border-radius: 50%;
+	background: #50e3a4;
+	color:#46bf8c;
+}
+
+.content .button:hover{
+	color: white;
+	transition: .5s;
+}
+
+
+
+.colorOn{
+	color:lime;
+}
+
+.colorOff{
+	color:red;
+}
+
+
+@keyframes title{
+	0%{
+		color:#537A47;
+	}
+	50%{
+		color:yellow;
+	}
+	100%{
+		color: #537A47;
+	}
+}
